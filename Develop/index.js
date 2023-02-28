@@ -25,7 +25,54 @@ const questions = [
         message: "What is your email address?",
         required: true
     },
+    {
+        type: "input",
+        name: "description",
+        message: "What is your project and what problem is it solving?",
+        required: true
+    },
+    {
+        type: "input",
+        name: "explanation",
+        message: "Why did you create this project?",
+        required: true
+    },
+    {
+        type: "input",
+        name: "reason",
+        message: "How will someone use this application?",
+        required: true
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "Please provide instructions on how to install your project.",
+        required: true
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Please provide instructions on how to use this project.",
+        required: true
+    },
+    {
+        type: "input",
+        name: "contribute",
+        message: "Please provide guidelines for contributing.",
+        required: true
+    },
+    {
+        type: "input",
+        name: "testing",
+        message: "Please provide instructions on how to test the project.",
+        required: true
+    },
 ];
+
+inquirer.prompt(questions).then((answers) => {
+    console.log('Answers:', answers);
+    // Perform additional processing or output based on the user's answers here
+  });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
