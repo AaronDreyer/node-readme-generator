@@ -4,8 +4,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "no license" ) {
-    return
-    `![badge](https://img.shields.io/badge/license-${license}-blue)`;
+    return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
   } else {
     return "";
   }
@@ -15,8 +14,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "no license") {
-  return
-  `[${license}](https://choosealicense.com/licenses/${license})`;
+  return `[${license}](https://choosealicense.com/licenses/${license})`;
 } else {
   return "";
 }
@@ -26,12 +24,12 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "no license") {
-    return
-    `## [License](#table-of-contents)
+    return`
+  ## [License](#table-of-contents)
 
-    This application is under the following license:
+  This application is under the following license:
 
-    ${renderLicenseLink(license)}
+  ${renderLicenseLink(license)}
     `;
   } else {
     return "";
