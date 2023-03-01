@@ -12,7 +12,7 @@ const questions = [
         name: "title",
         message: "What is the title for your project?",
         validate: (input) => {
-            return input ? false : 'Please enter a title for your project';
+            return input ? true : 'Please enter a title for your project';
           },
     },
     {
@@ -89,10 +89,10 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log('Answers:', answers);
+// inquirer.prompt(questions).then((answers) => {
+//     console.log('Answers:', answers);
     
-  });
+//   });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -108,14 +108,12 @@ function init() {
     .then((answers) => {
         const markdown = generateMarkdown(answers);
         writeToFile('README.md', markdown);
+        console.log("README.md file has been created successfully!");
+      })
+      .catch((error) => {
+        console.log(error);
       });
 }
 
 // Function call to initialize app
-init()
-.then(() => {
-    console.log("README.md file has been created successfully!");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+init();
