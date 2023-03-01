@@ -30,9 +30,15 @@
 
   This is a project for a coding bootcamp course so their will be not contributors. However this is the location in include instructions on how to contribute.
 
-  undefined
+  
+  ## [License](#table-of-contents)
 
-  undefined
+  This application is under the following license:
+
+  [undefined](https://choosealicense.com/licenses/undefined)
+    
+
+  ![badge](https://img.shields.io/badge/license-undefined-blue)
   
   ## [Tests](#table-of-contents)
 
@@ -42,5 +48,5 @@
 
   Contact Information:
 
-  [GitHub](https://github.com/the-goodest/AaronDreyer)
+  [GitHub](https://github.com/AaronDreyer)
   [Email: aaronottaway@gmail.com](mailto:aaronottaway@gmail.com)
