@@ -75,7 +75,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
-        choices: ['agpl-3.0', 'gpl-3.0', 'lgpl-3.0', 'mpl-2.0', 'apache-2.0', 'mit', 'bsl-1.0', 'unlicense']
+        choices: ['agpl', 'gpl', 'lgpl', 'mpl', 'apache', 'mit', 'bsl', 'unlicense']
     },
     {
         type: "input",
