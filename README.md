@@ -1,7 +1,7 @@
 
   # test
 
-  
+  ![badge](https://img.shields.io/badge/license-agpl-3.0-blue)
 
   ## Table-of-Contents
 
@@ -32,7 +32,13 @@
 
   test
 
-  This project does not have a designated license
+  
+  ## [License](#table-of-contents)
+
+  This application is under the following license:
+
+  [agpl-3.0](https://choosealicense.com/licenses/agpl-3.0
+    
   
   ## [Tests](#table-of-contents)
 
