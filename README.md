@@ -1,7 +1,7 @@
 
   # test
 
-  
+  ![badge](https://img.shields.io/badge/license-GNU AGPLv3-blue)
 
   ## Table-of-Contents
 
@@ -33,6 +33,12 @@
   test
 
   
+  ## [License](#table-of-contents)
+
+  This application is under the following license:
+
+  [GNU AGPLv3](https://choosealicense.com/licenses/GNU AGPLv3)
+    
   
   ## [Tests](#table-of-contents)
 
@@ -44,4 +50,4 @@
 
   [GitHub](https://github.com/AaronDreyer)
 
-  Email: (mailto: aaronottaway@gmail.com)
+  Email: aaronottaway@gmail.com
