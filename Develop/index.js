@@ -11,67 +11,87 @@ const questions = [
         type: "input",
         name: "title",
         message: "What is the title for your project?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter a title for your project';
+          },
     },
     {
         type: "input",
         name: "githubUsername",
         message: "What is your GitHub Username?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter your GitHub Username!';
+          },
     },
     {
         type: "input",
         name: "email",
         message: "What is your email address?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter your emial adress!';
+          },
     },
     {
         type: "input",
         name: "description",
         message: "What is your project and what problem is it solving?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter a description for your project!';
+          },
     },
     {
         type: "input",
         name: "explanation",
         message: "Why did you create this project?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter a reason for creating your project!';
+          },
     },
     {
         type: "input",
         name: "reason",
         message: "How will someone use this application?",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter how someone will use your porject!';
+          },
     },
     {
         type: "input",
         name: "installation",
         message: "Please provide instructions on how to install your project.",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter valid instructions on how to install your project!';
+          },
     },
     {
         type: "input",
         name: "usage",
-        message: "Please provide instructions on how to use this project.",
-        required: true
+        message: "Please provide instructions on how to operate this project.",
+        validate: (input) => {
+            return input ? true : 'Please enter instructions on how to operate your project!';
+          },
     },
     {
         type: "input",
         name: "contribute",
         message: "Please provide guidelines for contributing.",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter guidelines for contributing!';
+          },
     },
     {
         type: "input",
         name: "testing",
         message: "Please provide instructions on how to test the project.",
-        required: true
+        validate: (input) => {
+            return input ? true : 'Please enter instructions on how to test this project!';
+          },
     },
 ];
 
 inquirer.prompt(questions).then((answers) => {
     console.log('Answers:', answers);
-    // Perform additional processing or output based on the user's answers here
+    
   });
 
 // TODO: Create a function to write README file
