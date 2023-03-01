@@ -28,6 +28,7 @@ function renderLicenseSection(license) {
   if (license !== "no license") {
     return
     `## [License](#table-of-contents)
+
     This application is under the following license:
     `;
   } else {
@@ -37,8 +38,9 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return 
-  `
+  return `
+  # ${data.title}
+
   ## Table-of-Contents
 
   * [Description](#description)
@@ -47,24 +49,42 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [License](#license)
   
   ## [Description](#table-of-contents)
 
+  ${data.description}
+
+  ${data.explanation}
+
+  ${data.reason}
+
   ## [Installation](#table-of-contents)
 
+  ${data.installation}
+
   ## [Usage](#table-of-contents)
+
+  ${data.usage}
   
   ## [Contributing](#table-of-contents)
+
+  ${data.contribute}
   
   ## [Tests](#table-of-contents)
+
+  ${data.testing}
 
   ## [Questions](#table-of-contents)
 
   Contact Information:
 
-  [GitHub](https://github.com/)
-  [Email: ](mailto:)
+  [GitHub](https://github.com/${data.githubUsername})
+  [Email: ${data.email}](mailto:${data.email})
 
+  ## [License](#table-of-contents)
+
+  
 `;
 }
 
@@ -74,7 +94,7 @@ module.exports = generateMarkdown;
 // WHEN I am prompted for information about my application repository
 // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
-// WHEN I enter my project title
+// WHEN I enter my project title 
 // THEN this is displayed as the title of the README
 
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
