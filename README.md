@@ -1,6 +1,8 @@
 
   # node-readme-generator
 
+  ![badge](https://img.shields.io/badge/license-No License-blue)
+
   ## Table-of-Contents
 
   * [Description](#description)
@@ -35,10 +37,8 @@
 
   This application is under the following license:
 
-  [undefined](https://choosealicense.com/licenses/undefined)
+  [No License](https://choosealicense.com/licenses/No License)
     
-
-  ![badge](https://img.shields.io/badge/license-undefined-blue)
   
   ## [Tests](#table-of-contents)
 
@@ -49,5 +49,5 @@
   Contact Information:
 
   [GitHub](https://github.com/AaronDreyer)
-  
-  [Email: aaronottaway@gmail.com](mailto:aaronottaway@gmail.com)
+
+  [Email:] (mailto:aaronottaway@gmail.com)
