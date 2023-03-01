@@ -12,7 +12,7 @@ const questions = [
         name: "title",
         message: "What is the title for your project?",
         validate: (input) => {
-            return input ? true : 'Please enter a title for your project';
+            return input ? false : 'Please enter a title for your project';
           },
     },
     {
@@ -95,10 +95,27 @@ inquirer.prompt(questions).then((answers) => {
   });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+    .then((answers) => {
+        const markdown = generateMarkdown(answers);
+        writeToFile('README.md', markdown);
+      });
+}
 
 // Function call to initialize app
 init()
+.then(() => {
+    console.log("README.md file has been created successfully!");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
