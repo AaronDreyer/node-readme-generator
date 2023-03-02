@@ -107,7 +107,7 @@ function init() {
     return inquirer.prompt(questions)
     .then((answers) => {
         const markdown = generateMarkdown(answers);
-        writeToFile('generatedREADME.md', markdown);
+        writeToFile('generated-README.md', markdown);
         console.log("README.md file has been created successfully!");
       })
       .catch((error) => {
