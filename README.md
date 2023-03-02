@@ -42,6 +42,6 @@
 
   Contact Information:
 
-  GitHub:(https://github.com/AaronDreyer)
+  GitHub: (https://github.com/AaronDreyer)
 
   Email: aaronottaway@gmail.com

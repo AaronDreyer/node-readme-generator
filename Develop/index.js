@@ -5,6 +5,8 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
+// Added questions for every requirement for challenge
+// Used the validate input function to test the input and whether anything has been inputted
 const questions = [
     {
         type: "input",
@@ -70,6 +72,7 @@ const questions = [
             return input ? true : 'Please enter instructions on how to operate your project!';
           },
     },
+    // The license took awhile to figure out but I added them based on their url name so the links and badges can accurately be added to the readme.md
     {
         type: 'list',
         name: 'license',
@@ -95,6 +98,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
+// This function writes the readme and passes a console log to show that it has been saved
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
@@ -103,6 +107,7 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+// This passes the question answers into the readme and generates the files
 function init() {
     return inquirer.prompt(questions)
     .then((answers) => {

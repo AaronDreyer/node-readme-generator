@@ -1,4 +1,5 @@
-
+// The following code uses template literals to call each section the the correct placement in the reamme file. 
+// Finally the generateMarkdwon takes the data from the index.js and adds it to the scetion based on the literal for when the readme is produced.
 
 /// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -82,7 +83,7 @@ function generateMarkdown(data) {
 
   Contact Information:
 
-  GitHub:(https://github.com/${data.githubUsername})
+  GitHub: (https://github.com/${data.githubUsername})
 
   Email: ${data.email}
 `;
